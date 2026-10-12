@@ -1,0 +1,8 @@
+.venv/
+.private/
+__pycache__/
+*.pyc
+data/
+outputs/
+*.xlsx
+.DS_Store

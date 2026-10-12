@@ -1,0 +1,26 @@
+{
+  "BILI": {
+    "approved": false,
+    "basis": "填写已核实的访问依据与范围",
+    "reviewed_at": "",
+    "robots_review": "填写相关路径规则核查结果"
+  },
+  "DY": {
+    "approved": false,
+    "basis": "填写已核实的访问依据与范围",
+    "reviewed_at": "",
+    "robots_review": "填写相关路径规则核查结果"
+  },
+  "WB": {
+    "approved": false,
+    "basis": "填写已核实的访问依据与范围",
+    "reviewed_at": "",
+    "robots_review": "填写相关路径规则核查结果"
+  },
+  "XHS": {
+    "approved": false,
+    "basis": "填写已核实的访问依据与范围",
+    "reviewed_at": "",
+    "robots_review": "填写相关路径规则核查结果"
+  }
+}

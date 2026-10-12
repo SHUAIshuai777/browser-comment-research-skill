@@ -1,0 +1,74 @@
+{
+  "platforms": [
+    "DY",
+    "XHS",
+    "WB",
+    "BILI"
+  ],
+  "seed": "example-frozen-seed-v1",
+  "timezone": "Asia/Shanghai",
+  "video_window": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "comment_window": [
+    "2025-01-01T00:00:00+08:00",
+    "2025-12-31T23:59:59.999999+08:00"
+  ],
+  "videos_per_case_platform": 2,
+  "video_rule": "原selection_rank=1和2；3仅客观不可访问时替补一次，不因正文少/内容不理想替换",
+  "positions_per_stream": 50,
+  "streams": [
+    "H热门或默认前50位置",
+    "T原生最新/时间序前50位置；不可用时延续H的51至100位置"
+  ],
+  "H_sample": 10,
+  "T_sample_by_accessible_time_tercile": [
+    3,
+    4,
+    3
+  ],
+  "time_terciles": "可及池内已知期内日期升序；前ceil(N/3)、次ceil(N/3)、其余；小N缺口不挪配额",
+  "membership_overlap": "H与T独立抽选后按评论身份合并正文、保留双重成员；不补位",
+  "sample_order": "SHA256(seed|unit_id|layer|comment_key)升序，哈希并列按comment_key升序",
+  "supplement_per_video_max": 5,
+  "supplement_pool": "同一H/T已读取池，日期期内且不属基线的一级评论；关键词只建候选，拒绝/否定同样保留",
+  "supplement_keywords": [
+    "惩罚",
+    "处罚",
+    "处分",
+    "追责",
+    "问责",
+    "严惩",
+    "判刑",
+    "坐牢",
+    "拘留",
+    "刑责",
+    "罚款",
+    "停职",
+    "撤职",
+    "开除",
+    "封杀",
+    "抵制",
+    "赔偿",
+    "补偿",
+    "道歉",
+    "整改",
+    "教育",
+    "改正",
+    "原谅",
+    "谅解",
+    "宽容",
+    "放过"
+  ],
+  "reply_context": {
+    "roots_per_video": 2,
+    "native_visible_replies_per_root": 2,
+    "independent_coding_unit": false
+  },
+  "time_budget_per_video_active_minutes": 8,
+  "stagnant_page_limit": 2,
+  "content_policy": "content_loaded=true且content_kind为可见表达即可进入中性池，图片/贴纸可无文字；technical_missing不入样",
+  "validation_policy": "用户处理登录与验证；不绕过；限流停止当轮，不用备用绕过平台限制",
+  "sampler_has_network": false
+}

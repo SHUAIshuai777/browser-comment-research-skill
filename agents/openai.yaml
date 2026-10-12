@@ -1,0 +1,4 @@
+interface:
+  display_name: "浏览器评论研究采集"
+  short_description: "普通浏览器登录后的动态评论有限采集、确定性抽样与离线核验"
+  default_prompt: "使用 $browser-comment-research 建立可复现的评论采集项目，先运行合成示例，再按我的案例和视频清单有限采集。"

@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "event_id": "DEMO",
+      "category": "自定义类别",
+      "queries": [
+        "合成案例",
+        "合成案例讨论",
+        "合成案例评论"
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "event_id": "DEMO",
+      "category": "自定义类别",
+      "platform": "BILI",
+      "video_id": "DEMO_VIDEO",
+      "url": "https://example.invalid/video/DEMO_VIDEO",
+      "title": "合成示例，不是实际视频",
+      "author": "合成",
+      "published_at": "2025-01-01",
+      "comment_count": 100,
+      "selection_rank": 1
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "DEMO_BILI_V1",
+      "event_id": "DEMO",
+      "category": "自定义类别",
+      "platform": "BILI",
+      "video_id": "DEMO_VIDEO",
+      "url": "https://example.invalid/video/DEMO_VIDEO",
+      "title": "合成示例，不是实际视频"
+    }
+  ]
+}
